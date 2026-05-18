@@ -1,0 +1,28 @@
+# To clone the main branch of the repo.
+git clone <repo_url>
+
+# To clone the specific branch of the repo.
+git clone -b <branch_name> <repo_url>
+
+# Add the changes to the current.
+git add .
+
+# Label the changes to be pushed to the remote repo.
+# Includes option for commit message.
+git commit -m "<message_to_add>"
+
+# Push the commited changes to the Remote Repo.
+git push
+
+# Download or update all dependency sub-modules.
+git submodule update --init --recursive
+
+# Add main branch of another Repo as a dependency submodule.
+git submodule add <repo_url>
+
+# Add any branch of another Repo as a dependency submodule.
+git submodule add -b <branch_name> <repo_url>
+
+# Remove an umcommitted submodule.
+git rm -f <path_to_submodule>
+rm -rf .git/modules/<path_to_submodule>
