@@ -4,6 +4,12 @@ git clone <repo_url>
 # To clone the specific branch of the repo.
 git clone -b <branch_name> <repo_url>
 
+# To clone the main branch of the repo with submodules.
+git clone --recurse-submodules <repo_url>
+
+# To clone a specific branch of the repo with submodules.
+git clone --branch <branch_name> --recurse-submodules <repo_url>
+
 # Add the changes to the current.
 git add .
 
